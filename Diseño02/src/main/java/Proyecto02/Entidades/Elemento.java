@@ -1,5 +1,5 @@
 package Entidades;
-
+//Elemento
 public class Elemento extends Documento {
 	private String contenido;
 	private String id;
