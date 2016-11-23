@@ -6,13 +6,16 @@ import java.util.List;
 
 public class Seccion extends Documento {
 private List<Documento> listaSeccion;
-	 public Seccion(){
+private String nombre;
+	 public Seccion(String nombre){
 		listaSeccion= new ArrayList<Documento>();
+		this.nombre=nombre;
 	 }
 	
 	 @Override
 	public void add(Documento documento) {
 		// TODO Auto-generated method stub
+		
 		listaSeccion.add(documento);
 	}
 	@Override
@@ -28,11 +31,17 @@ private List<Documento> listaSeccion;
 	}
 	@Override
 	//ModificarContenido
-	public void modificar(String documento) {
-		// TODO Auto-generated method stub
+	public void incluir() {
+		System.out.println(nombre);
+		for (Documento seccion : listaSeccion) {
+			
+			seccion.incluir();
+			
+		}
+		}
 			
 		}
 		
-	}
+	
 	
 

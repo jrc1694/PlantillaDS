@@ -1,10 +1,11 @@
 package Entidades;
-//Elemento
+
 public class Elemento extends Documento {
-	private String contenido;
-	private String id;
-	public Elemento(String id){
-		id=this.id;
+	private String nombre;
+	
+	public Elemento(String nombre){
+	
+		this.nombre=nombre;
 	}
 	@Override
 	public void add(Documento documento) {
@@ -25,14 +26,11 @@ public class Elemento extends Documento {
 	}
 
 	@Override
-	public void modificar(String contenido) {
-		System.out.println("modificadoElemento");
-		contenido=this.contenido;
+	public void incluir() {
+		System.out.println(nombre);
 	}
 	
-	public String getid(){
-		return id;
-	}
+	
 	
 	
 }
