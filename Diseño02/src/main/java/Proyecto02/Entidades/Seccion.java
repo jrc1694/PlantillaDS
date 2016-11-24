@@ -33,8 +33,9 @@ private String nombre;
 	//ModificarContenido
 	public void incluir() {
 		System.out.println(nombre);
+		//Guardar en base
 		for (Documento seccion : listaSeccion) {
-			
+			//Guardar en base
 			seccion.incluir();
 			
 		}
