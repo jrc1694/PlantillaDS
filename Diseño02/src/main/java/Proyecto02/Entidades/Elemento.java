@@ -27,6 +27,7 @@ public class Elemento extends Documento {
 
 	@Override
 	public void incluir() {
+		//Guardar en base
 		System.out.println(nombre);
 	}
 	
